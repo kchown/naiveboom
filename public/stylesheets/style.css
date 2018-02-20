@@ -1,0 +1,70 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#warning{
+	color: red;
+}
+
+textarea { border: 2px dotted black;  }
+
+button#dobtn { margin-top: 10px; padding: 5px 30px; cursor: pointer; border: 1px solid black;  transition: all .3s ease-in-out}
+button#dobtn:hover {background-color: black; color: white; transform: scale(.96); }
+button#dobtn:active { transform: scale(1.03); }
+#text_edit
+{
+	width: 70vw;
+}
+
+pre {
+white-space: pre-wrap;
+word-wrap: break-word;
+}
+
+hr {
+	border:0; height:1px; background-color:#d4d4d4;
+	color:#d4d4d4	/* IE6 */
+}
+
+#zhao {
+	color: red;
+}
+
+#enurl:hover { transform: scale(1.01); }
+
+#tg.show
+{
+	background: red;
+	width: 100vh;
+	opacity: 1;
+	color: yellow;
+	font-size: 10em;
+}
+
+#tg
+{
+	top: 1vw;
+	left: 1vw;
+	width: 1px;
+	display: block;
+	position: absolute;
+	background: gray;
+	transition: all 2s ease-in;
+	opacity: 0;
+}
+
+#enurl
+{
+	transition: all .3s ease-in-out;
+	margin: 3px 0;
+	display: inline-block;
+	color: white;
+	background-color: #66CCCC;
+	padding: 6px 12px;
+	border-radius: .5;
+}
