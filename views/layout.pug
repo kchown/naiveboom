@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://cdn.bootcss.com/bootswatch/4.0.0/litera/bootstrap.min.css')
+    script(src='https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js')
+    script(src='https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js')
+    script(src='/javascripts/vue.min.js')
+    script(src='/javascripts/axios.min.js')
+    script(src='/javascripts/jquery.loading.min.js')
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/jquery.loading.min.css')
+    meta(content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0' name='viewport')
+  body
+    <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light" style="">
+          <div class="container">
+            <a href="/" class="navbar-brand">naiveBoom</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" target='_blank' href="https://github.com/kchown/naiveboom">GitHub</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target='_blank' href="https://kch.host">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </div>
+    <div class="container maincontent">
+      <noscript>
+        <div class="alert alert-dismissible alert-danger">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>上帝啊!</strong> 您禁用了JavaScript，请开启它 <br> 如果您禁止使用JavaScript，将无法使用我们的服务！
+          <a href="http://www.chiefgroup.com.hk/temp/chiefeasy/how-to-enable-javascript.html" target='_blank' class="alert-link">查看如何开启Cookie</a>
+        </div>
+      </noscript>
+      block content
+    </div>
+    hr
+    footer
+      .container
+         a(href='/') 首页
+         a(href='https://github.com/kchown/naiveboom' target='_blank') GitHub

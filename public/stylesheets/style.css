@@ -1,70 +1,27 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+body {padding-top: 78px; font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.getbtn {margin-top: 16px; margin-bottom: 10px; padding: 8px 35px; }
+
+pre {letter-spacing: 0.12em; white-space: pre-wrap; word-wrap: break-word; font-size: 1.05em; line-height: 1.6em; font-family: Georgia, Cambria, "Times New Roman", Times, serif;}
+footer a{ margin-right: 9px }
+footer { margin-bottom: 10px; }
+#zhao {color: red; }
+
+p.tips{ line-height: 1.8em; }
+
+.maincontent{ min-height: 78vh }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
 }
-
-a {
-  color: #00B7FF;
-}
-
-#warning{
-	color: red;
-}
-
-textarea { border: 2px dotted black;  }
-
-button#dobtn { margin-top: 10px; padding: 5px 30px; cursor: pointer; border: 1px solid black;  transition: all .3s ease-in-out}
-button#dobtn:hover {background-color: black; color: white; transform: scale(.96); }
-button#dobtn:active { transform: scale(1.03); }
-#text_edit
-{
-	width: 70vw;
-}
-
-pre {
-white-space: pre-wrap;
-word-wrap: break-word;
-}
-
-hr {
-	border:0; height:1px; background-color:#d4d4d4;
-	color:#d4d4d4	/* IE6 */
-}
-
-#zhao {
-	color: red;
+.fade-enter, .fade-leave-to
+  opacity: 0;
 }
 
 #enurl:hover { transform: scale(1.01); }
 
-#tg.show
-{
-	background: red;
-	width: 100vh;
-	opacity: 1;
-	color: yellow;
-	font-size: 10em;
-}
+#tg.show {background: red; width: 100vh; opacity: 1; color: yellow; font-size: 10em; }
 
-#tg
-{
-	top: 1vw;
-	left: 1vw;
-	width: 1px;
-	display: block;
-	position: absolute;
-	background: gray;
-	transition: all 2s ease-in;
-	opacity: 0;
-}
+#tg {top: 1vw; left: 1vw; width: 1px; display: block; position: absolute; background: gray; transition: all 2s ease-in; opacity: 0; }
 
-#enurl
-{
-	transition: all .3s ease-in-out;
-	margin: 3px 0;
-	display: inline-block;
-	color: white;
-	background-color: #66CCCC;
-	padding: 6px 12px;
-	border-radius: .5;
-}
+#enurl {transition: all .3s ease-in; margin: 3px 0; display: inline-block; color: #02B875; border: 1px solid; border-radius: .859em; padding: 8px 15px; margin-top: 9px; border-radius: .5; }

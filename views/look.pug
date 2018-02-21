@@ -1,0 +1,20 @@
+extends layout
+block content
+	#app
+		<div v-if='status==1'>
+		pre {{ text }}
+		</div>
+		<div v-else-if='status==0'>
+		h6 啊喔😯，你查看的内容已经不见了...
+		p.tips 
+			| 这是因为这个网址已经被看过一次了，被看过一次的内容就会自动消失
+			| <br>对，这就是人们常说的 <b>阅后即焚！</b>
+		a(href="/") 我也要生成一个！
+		</div>
+		<div v-else>
+		p#warning 正在获取...
+		</div>
+	//- 输出用于匹配GUID的正则表达式
+	script.
+		reg_guid =  !{locals.reg_guid};
+	script(src='/javascripts/view.js')

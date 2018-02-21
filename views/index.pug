@@ -1,0 +1,59 @@
+extends layout
+block content
+
+    <div id='app'>
+        <div class="row">
+            <div class='col-md-10 col-xs-12 col-sm-12'>
+                <p> 在下面的框框里输入一些内容，然后点一下「去产生」按钮 
+                | <br>你就会得到一个长的网址，将这个网址发给你的朋友，他只能看一次
+                | 内容就会 <b>永远消失</b>！ </p>
+                <textarea v-model='text' rows='6' class='form-control'></textarea>
+                <button v-on:click='getTempURL' class="btn btn-primary getbtn">去产生</button>
+                
+                <transition name="fade">
+                    <p v-if="enurl">
+                        |可以把这个网址分享给你的朋友：
+                        <span id='enurl'>{{ enurl }}</span>
+                    </p>
+                </transition>
+                hr
+                <p>
+                    | Naiveboom - 让Naive的事情不再发生
+                    | 这是一个简单的项目，可以一定程度保证你的安全。 <br>
+                    | 举例：你有个链接或者一段文字需要发送给某人，但是通过QQ、WeChat这类
+                    if (isZhao)
+                        | 含<span id='zhao' v-on:mouseenter='showtg=true'>赵☭</span>量极高
+                    else
+                        | 被中国严密监管
+                    | <br>的服务去发送，有的时候会非常不安全，甚至会被查水表。<br>
+                    | <br>现在可以透过这样的一个方案得以解决<br>
+                    | 你将私密的链接或者文字粘贴到我们这个页面<br>
+                    | 产生一个一次性链接<br>
+                    | 阅后即焚<br>
+                    | 嗯，这回你不会被查水表了（确信<br>
+                </p>
+                img(src='/images/zhao.png' id='tg', 'v-bind:class'='tgstyle')
+            </div>
+        </div>
+    </div>
+    //- modal
+    <div id='modal'>
+        <div id='mmodal' class="modal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">{{ title }}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body" v-html='msg'>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+        script(src='/javascripts/a.js')
