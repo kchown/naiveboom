@@ -12,7 +12,7 @@ module.exports = {
 	// 1小时内单个IP可获取最多临时链接数
 	rate_limit: 500,
 	// 是否显示首页中的作死文本 eg.「☭赵」
-	isZhao: true,
+	isZhao: false,
 	// 用于匹配GUID的正则
 	reg_guid: /[?a-zA-Z0-9]{8}-[?a-zA-Z0-9]{4}-[?a-zA-Z0-9]{4}-[?a-zA-Z0-9]{4}-[?a-zA-Z0-9]{12}$/,
 }
