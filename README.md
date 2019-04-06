@@ -15,3 +15,10 @@
 嗯，好像就是阅后即焚来的（是的
 
 这样你就不会被查水表了！
+
+## 搭建教程
+
+1. 克隆项目：`git clone https://github.com/kchown/naiveboom.git`
+2. 安装依赖：`npm install`
+3. 开始反水表！：`node run`
+4. 默认监听3000端口
